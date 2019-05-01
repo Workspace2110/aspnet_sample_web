@@ -1,1 +1,2 @@
-My ASP.Net web works in university
+- My ASP.Net web works in university
+- database: SQL server
