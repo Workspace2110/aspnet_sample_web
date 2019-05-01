@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<link rel="stylesheet" href="~/css/style.css" />
+<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <div class="container text-left">
+            <h2></h2>
+            <h1 class="title">好簡單表單</h1>
+            <form class="myStyle">
+                <div>
+                    姓名:
+                    <input type="text" name="userName" id="userName" onchange="WriteData()">
+                </div>
+                <div>
+                    性別:
+                    <input type="radio" name="gender" id="gender" value="Male" onclick="WriteMalea()">男性
+                    <input type="radio" name="gender" id="gender" value="Female" onclick="WriteFemale()">女性
+                </div>
+                <div>
+                    年齡:
+                    <input type="text" name="age" id="age" onchange="WriteData()" onkeyup="value=value.replace(/[^\d]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                </div>
+                <div>
+                    輸入密碼:
+                    <input TYPE="password" name="password" id="password" onchange="CheckPassword()">
+                </div>
+                <div>
+                    重新輸入密碼:
+                    <input type="password" name="re-password" id="re-password" onchange="CheckPassword()">
+                </div>
+                <div>
+                    班級:
+                    <select id="mySelect" onchange="WriteData()">
+                        <option value="null">請選擇</option>
+                        <option value="資工1A">資工1A</option>
+                        <option value="資工1B">資工1B</option>
+                        <option value="資工2A">資工2A</option>
+                        <option value="資工2B">資工2B</option>
+                        <option value="資工3A">資工3A</option>
+                        <option value="資工3B">資工3B</option>
+                        <option value="資工4A">資工4A</option>
+                        <option value="資工4B">資工4B</option>
+                    </select>
+                </div>
+            </form>
+            <div class="myStyle">
+                輸入結果:
+                <input type="text" name="result" id="result" size=50>
+            </div>
+            <h3 class="" name="check" id="check"></h3>
+        </div>
+</div>

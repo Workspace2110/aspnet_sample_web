@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Game";
+}
+
+<!--css for game page-->
+<link rel="stylesheet" href="~/css/game.css" />
+<div onload="Game">
+    <h1 class="text-center">Game</h1>
+    <button id="startBtn" name="startBtn" type="button" class="btn btn-success" onclick="start()">Start</button>
+    <button type="button" class="btn btn-danger" onclick="restart()">Restart</button>
+    <canvas class="container" id="myCanvas" name="myCanvas" width="960" height="640"></canvas>
+</div>
+
+<!--javascript for game page-->
+<script src="~/js/game.js" asp-append-version="true"></script>

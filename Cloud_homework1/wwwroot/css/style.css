@@ -1,0 +1,27 @@
+﻿.title {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.items {
+    color: rgb(18, 211, 224);
+    font-family: 'monospace', sans-serif;
+}
+
+.images {
+    align-self: center;
+}
+
+.myStyle {
+    font-size: 30px;
+    color: rgb(25, 8, 180)
+}
+
+.Pass {
+    color: rgb(40, 241, 0);
+}
+
+.Unpass {
+    color: rgb(255, 0, 0)
+}
